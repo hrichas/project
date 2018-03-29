@@ -1,0 +1,74 @@
+		{% extends 'layout.html' %}
+
+
+
+
+		{% block body %}
+
+		<h3>Preview</h3>
+
+		<div class = "container">
+			<div class="row">
+			
+				<div class="col-md-2 card-container">
+					
+					<div class = "card">
+						
+						
+						<a href="#1"><img class="card-img-top" src="{{url_for('static', filename = 'img/img1.jpg')}}" alt="card image"></a>
+
+						
+					</div>
+					
+					
+					<div class = "card">
+						<a href="#2"><img class="card-img-top" src="{{url_for('static', filename = 'img/img1.jpg')}}" alt="card image"></a>
+
+					</div>
+					<div class = "card">
+						<a href="#3"><img class="card-img-top" src="{{url_for('static', filename = 'img/img1.jpg')}}" alt="card image"></a>
+					</div>
+					<div class = "card">
+						<a href="#4"><img class="card-img-top" src="{{url_for('static', filename = 'img/img1.jpg')}}" alt="card image"></a>
+					</div>
+					<div class = "card">
+						<a href="#5"><img class="card-img-top" src="{{url_for('static', filename = 'img/img1.jpg')}}" alt="card image"></a>
+					</div>
+					
+
+				</div>
+				
+				<div class="col-md-8 offset-md-2 image">
+					<!-- {% for out in outfile%} -->
+
+					<div id= "1" >
+						<embed  src="{{ url_for('static', filename = 'split_pdf/page-00.pdf') }}" width="700" height="864">
+					</div>
+					<div id= "2" >
+						<embed  src="{{ url_for('static', filename = 'split_pdf/page-01.pdf') }}" width="700" height="864">
+					</div>
+					<div id= "3" >
+						<embed  src="{{ url_for('static', filename = 'split_pdf/page-00.pdf') }}" width="700" height="864">
+					</div>					
+					<div id= "4" >
+						<embed  src="{{ url_for('static', filename = 'split_pdf/page-0.pdf') }}" width="700" height="864">
+					</div>					
+					<div id= "5" >
+						<embed  src="{{ url_for('static', filename = 'split_pdf/page-00.pdf') }}" width="700" height="864">
+					</div>
+					<!-- {% endfor %} -->
+
+				</div>
+				
+			
+			</div>
+			
+		</div>
+
+
+
+
+
+
+
+		{% endblock %}

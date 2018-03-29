@@ -1,0 +1,15 @@
+.card{
+	width: 10rem;
+	margin-bottom: 10px;
+}
+
+.img-top{
+	width: 100%;
+}
+
+.card-container{
+	overflow: auto;
+    height: 65rem;
+
+}
+
